@@ -1,0 +1,123 @@
+/*big tablet to 1200px*/
+@media only screen and (max-width: 1200px) {
+  .row {
+    padding: 0 2%;
+  }
+  .hero-text-box {
+    width: 100%;
+    padding: 0 2%;
+  }
+  .slider {
+    margin-top: 50px;
+    height: 650px;
+  }
+  .contact-company {
+    padding-left: 250px;
+  }
+  .contact-customer {
+    padding-left: 50px;
+  }
+  .contact-form {
+    width: 80%;
+  }
+}
+
+/* small tablet to big tablet: 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+  .slider {
+    height: 510px;
+  }
+  .contact-company {
+    padding-left: 150px;
+  }
+  .contact-customer h3 {
+    padding-left: 5px;
+  }
+  .contact-form {
+    width: 80%;
+  }
+}
+
+/*small phone to small tablet: 481px to 767px*/
+@media only screen and (max-width: 767px) {
+  .main-nav {
+    display: none;
+  }
+  .hero-text-box {
+    font-size: 60%;
+  }
+  .hero-text-box a {
+    font-size: 150%;
+  }
+  .section-services {
+    padding: 40px 30px;
+  }
+  .long-copy {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0%;
+  }
+  .section-projects {
+    padding: 30px 0;
+  }
+  .slider {
+    height: 400px;
+    margin-top: 20px;
+  }
+  .section-contact {
+    padding: 30px 0;
+  }
+  .contact-company {
+    padding-left: 50px;
+  }
+  .contact-customer {
+    padding-left: 0px;
+  }
+  .contact-form {
+    width: 100%;
+    margin-left: 10px;
+  }
+}
+
+/*Small phones: 0 to 480px*/
+@media only screen and (max-width: 520px) {
+  h2 {
+    font-size: 120%;
+  }
+  h3 {
+    font-size: 70%;
+  }
+  body {
+    font-size: 100%;
+  }
+  .logo {
+    height: 50px;
+    margin: 20px 20px;
+  }
+
+  .slider {
+    height: 300px;
+  }
+  .contact-company {
+    padding-left: 10px;
+    font-size: 68%;
+  }
+  .contact-form {
+    font-size: 68%;
+    margin-left: 0;
+  }
+  footer {
+    font-size: 70%;
+  }
+  footer p {
+    margin-top: 45px;
+  }
+  .slider__btn {
+    height: 2rem;
+    width: 2rem;
+    font-size: 1.25rem;
+  }
+  .testimonials {
+    font-size: 50%;
+  }
+}
