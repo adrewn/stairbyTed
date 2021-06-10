@@ -79,6 +79,7 @@
   }
   .main-nav {
     background-color: rgba(99, 98, 98, 0.95);
+    background-size: cover;
     float: right;
     margin-top: 20px;
     margin-right: 0px;

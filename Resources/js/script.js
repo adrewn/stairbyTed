@@ -83,6 +83,7 @@ document.querySelector(".btn-show-me").addEventListener("click", function (e) {
 const mobile_btn = document.querySelector(".js--nav-icon");
 const main_nav = document.querySelector(".main-nav");
 mobile_btn.addEventListener("click", function () {
+  console.log("clicked");
   if (main_nav.style.display == "none") {
     main_nav.style.display = null;
   } else {
