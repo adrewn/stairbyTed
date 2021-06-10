@@ -49,7 +49,6 @@ const navHeight = nav.getBoundingClientRect().height;
 
 const stickyNav = function (entries) {
   const [entry] = entries;
-  console.log(entry);
 
   if (!entry.isIntersecting) nav.classList.add("sticky");
   else nav.classList.remove("sticky");
@@ -63,7 +62,7 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 headerObserver.observe(header);
 
 /*Page navigation*/
-document.querySelector(".nav__links").addEventListener("click", function (e) {
+document.querySelector("#nav__links").addEventListener("click", function (e) {
   e.preventDefault();
 
   // Matching strategy
@@ -78,4 +77,15 @@ document.querySelector(".btn-show-me").addEventListener("click", function (e) {
   document
     .querySelector(".section-services")
     .scrollIntoView({ behavior: "smooth" });
+});
+
+/*mobile navigation button*/
+const mobile_btn = document.querySelector(".js--nav-icon");
+const main_nav = document.querySelector(".main-nav");
+mobile_btn.addEventListener("click", function () {
+  if (main_nav.style.display == "none") {
+    main_nav.style.display = null;
+  } else {
+    main_nav.style.display = "none";
+  }
 });
