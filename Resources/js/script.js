@@ -80,13 +80,19 @@ document.querySelector(".btn-show-me").addEventListener("click", function (e) {
 });
 
 /*mobile navigation button*/
-const mobile_btn = document.querySelector(".js--nav-icon");
 const main_nav = document.querySelector(".main-nav");
-mobile_btn.addEventListener("click", function () {
-  console.log("clicked");
-  if (main_nav.style.display == "none") {
-    main_nav.style.display = null;
-  } else {
-    main_nav.style.display = "none";
-  }
-});
+const hamburger = document.querySelector(".hamburger");
+
+function mobileMenu() {
+  hamburger.classList.toggle("active");
+  main_nav.classList.toggle("active");
+}
+
+hamburger.addEventListener("click", mobileMenu);
+
+const navLinks = document.querySelectorAll(".nav__link");
+navLinks.forEach((n) => n.addEventListener("click", closeMenu));
+function closeMenu() {
+  hamburger.classList.remove("active");
+  main_nav.classList.remove("active");
+}

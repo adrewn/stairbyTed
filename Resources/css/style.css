@@ -132,14 +132,12 @@ header {
 .sticky .main-nav {
   margin-right: 60px;
   margin-top: 20px;
-  height: 15vh;
 }
 .sticky .logo {
   margin-top: 5px;
 }
 
 .nav {
-  margin-right: 60px;
   height: 8vh;
 }
 .main-nav {
@@ -415,4 +413,15 @@ footer p {
 .mobile-nav-icon i {
   font-size: 200%;
   color: #fff;
+}
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #fff;
 }
